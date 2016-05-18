@@ -58,10 +58,14 @@ define([], () => {
     $stateProvider
       .state('app', {
         abstract: true,
-        template: '<div ui-view></div>',
+        views: {
+          header: {},
+          content: {}
+        },
+
         resolve: {
           load: ["$ocLazyLoad", $ocLazyLoad => {
-            return $ocLazyLoad.load(['pages', 'core']);
+            return $ocLazyLoad.load(['pages', 'api', 'core']);
           }]
         }
       })
@@ -71,11 +75,9 @@ define([], () => {
         controller: 'CategoryController',
         controllerAs: 'vm',
         resolve: {
-          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['category', 'api'])],
-          allArticles: ['load', 'api',
-            (load, api) => api.getArticles()],
-          categories: ['load', 'api',
-            (load, api) => api.getCategories()],
+          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['category'])],
+          category: ['load', 'api', '$stateParams',
+            (load, api, $stateParams) => api.getCategoryById($stateParams.id)],
           articles: ['load', 'api', '$stateParams',
             (load, api, $stateParams) => api.getArticlesByCategory($stateParams.id)]
         }
@@ -86,7 +88,7 @@ define([], () => {
         controller: 'ArticleController',
         controllerAs: 'vm',
         resolve: {
-          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['article', 'api'])],
+          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['article'])],
           article: ['load', 'api', '$stateParams', (load, api, $stateParams) => api.getArticleById($stateParams.id)]
         }
       })
