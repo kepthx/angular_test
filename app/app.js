@@ -99,7 +99,8 @@ define([], () => {
         controllerAs: 'vm',
         resolve: {
           load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['article'])],
-          article: ['load', 'api', '$stateParams', (load, api, $stateParams) => api.getArticleById($stateParams.id)]
+          article: ['load', 'api', '$stateParams', (load, api, $stateParams) => api.getArticleById($stateParams.id)],
+          categories: ['load', 'api', (load, api) => api.getCategories()]
         }
       })
 

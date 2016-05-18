@@ -1,9 +1,18 @@
 <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="text-center" ng-bind="::vm.article.title"></h1>
+            <p class="text-center">
+                <img ng-src="{{vm.article.image}}" alt="Article picture">
+            </p>
+            <p>
+                <time ng-bind="vm.article.date_published | date: 'yyyy-MM-dd'"></time>
+                <b ng-bind="vm.getCategory(vm.article.category)"></b>
+            </p>
+            <p class="text-justify" ng-bind="vm.article.body"></p>
+        </div>
+        <div class="col-md-4">
 
-    <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a
-            mostly barebones HTML document.</p>
+        </div>
     </div>
-
 </div><!-- /.container -->
