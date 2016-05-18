@@ -6,5 +6,6 @@
   ArticleController.$inject = ['$scope', 'api'];
   function ArticleController($scope, api){
       let vm = this;
+      
   }
 })();

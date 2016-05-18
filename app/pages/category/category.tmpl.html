@@ -1,9 +1,33 @@
 <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="media" ng-repeat="item in vm.articles track by $index">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" ng-src="{{item.image}}" alt="Article image" style="width: 128px; height: 128px;">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading" ng-bind="item.title"></h4>
+                    <p>
+                        <time ng-bind="item.date_published | date: 'yyyy-MM-dd'"></time>
+                        <b ng-bind="vm.getCategory(item.category)"></b>
+                    </p>
+                    <p class="article_summary" ng-bind="item.body"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="articles_all">
+                <div class="list-group">
+                    <a href="#" class="list-group-item" ng-repeat="item in vm.allArticles track by $index">
+                        <p class="list-group-item-text" ng-bind="::item.title"></p>
+                    </a>
+                </div>
+            </div>
+            <div class="articles_grouped">
 
-    <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a
-            mostly barebones HTML document.</p>
+            </div>
+        </div>
     </div>
-
 </div><!-- /.container -->

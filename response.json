@@ -2,108 +2,108 @@
   "data": {
     "articles": [
       {
-        "id": "1",
+        "id": 1,
         "title": "Programming Perspective",
         "image": "http://d2ufjv2mjmrw7m.cloudfront.net/sites/default/files/resize/remote/633460ec4c7d47b256875008761cdacc-605x403.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-05-17",
-        "category": "1"
+        "category": 1
       },
       {
-        "id": "2",
+        "id": 2,
         "title": "Bridges and Fisher Win the California Regional",
         "image": "http://d2ufjv2mjmrw7m.cloudfront.net/sites/default/files/resize/remote/20ea2ca2f2ed48288025f15c779f0971-605x312.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-05-15",
-        "category": "6"
+        "category": 6
       },
       {
-        "id": "3",
+        "id": 3,
         "title": "Big Waves in the Pacific",
         "image": "http://d2ufjv2mjmrw7m.cloudfront.net/sites/default/files/resize/remote/e80be213dafc39dc2dc9d14e69c0fd9c-605x265.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-05-16",
-        "category": "6"
+        "category": 6
       },
       {
-        "id": "4",
+        "id": 4,
         "title": "IWF Executive Board members visit USA Weightlifting Championships/ US Olympic Team Trials",
         "image": "http://www.iwf.net/wp-content/uploads/2016/05/IMG_0763.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-05-08",
-        "category": "2"
+        "category": 2
       },
       {
-        "id": "5",
+        "id": 5,
         "title": "Pyrros Dimas lights the Olympic Flame in Athens",
         "image": "http://www.iwf.net/wp-content/uploads/2016/04/13100914_10208011939609152_932530600021271703_n.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-05-02",
-        "category": "2"
+        "category": 2
       },
       {
-        "id": "6",
+        "id": 6,
         "title": "Slovakia's Mokošová Training Toward Rio 'On a Very Intense Level'",
         "image": "http://www.intlgymnast.com/image/mokosova_barbora.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-04-23",
-        "category": "3"
+        "category": 3
       },
       {
-        "id": "7",
+        "id": 7,
         "title": "Fragapane, Whitlock Win British Championships",
         "image": "http://www.intlgymnast.com/image/whitlock_fragapane.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-05-01",
-        "category": "3"
+        "category": 3
       },
       {
-        "id": "8",
+        "id": 8,
         "title": "Colorado Woman Wins Her First Marathon At Age 53",
         "image": "http://cdn.running.competitor.com/files/2016/05/13221617_1203503003001252_5590530654565401212_n-393x600.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-05-16",
-        "category": "4"
+        "category": 4
       },
       {
-        "id": "9",
+        "id": 9,
         "title": "6 Summer Trail Getaways",
         "image": "http://cdn.running.competitor.com/files/2016/05/Grand-Island-1-800x484.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-05-15",
-        "category": "4"
+        "category": 4
       },
       {
-        "id": "10",
+        "id": 10,
         "title": "Laura Thweatt Hoping for More New York City Magic",
         "image": "http://cdn.running.competitor.com/files/2016/04/Laura-Thweatt.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-05-14",
-        "category": "4"
+        "category": 4
       },
       {
-        "id": "11",
+        "id": 11,
         "title": "The best meal replacement supplements for you!",
         "image": "https://www.gymnordic.com/media/things/images/thumbs/852x300_meals_1.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-04-14",
-        "category": "5"
+        "category": 5
       },
       {
-        "id": "12",
+        "id": 12,
         "title": "COMPETITION CALM",
         "image": "http://d2ufjv2mjmrw7m.cloudfront.net/sites/default/files/resize/remote/a0c983288b58d454ef3d7ac186ca810b-605x403.jpg",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-04-14",
-        "category": "1"
+        "category": 1
       },
       {
-        "id": "13",
+        "id": 13,
         "title": "Statistics From the 2016 Open",
         "image": "http://static1.squarespace.com/static/52665e2ce4b03d291eba9c2f/t/568c9790df40f37b332229e5/1452054425126/",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a placerat nibh. Vivamus dictum nisi ut massa commodo, vitae fermentum tortor ultrices. Nullam consectetur et neque quis tincidunt. Suspendisse mollis tempor dignissim. Praesent id lectus sed nunc tempor mattis ac nec dui. Nullam eget laoreet sapien, cursus gravida augue. Duis quis molestie urna. Ut semper non augue id vestibulum. Nam semper nibh turpis, ac condimentum tellus viverra at. Proin vel consequat orci. Fusce vitae nunc id est condimentum lobortis. Nunc urna orci, vulputate sit amet placerat quis, iaculis ac magna. Etiam eu molestie eros. Aenean gravida elementum justo eu euismod.",
         "date_published": "2016-02-14",
-        "category": "1"
+        "category": 1
       }
     ],
     "categories": [
