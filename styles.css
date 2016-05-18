@@ -1,3 +1,6 @@
 .article_summary:after {
     content: '...';
 }
+.article img {
+    max-width: 100%;
+}

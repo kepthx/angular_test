@@ -16,9 +16,19 @@ define([], () => {
         },
         {
           name: 'header',
+          series: true,
           files: [
             '/app/components/header/header.module.js',
             '/app/components/header/header.controller.js'
+          ]
+        },
+        {
+          name: 'articles-list',
+          series: true,
+          files: [
+            '/app/components/articles-list/articles-list.module.js',
+            '/app/components/articles-list/articles-list.controller.js',
+            '/app/components/articles-list/articles-list.directive.js'
           ]
         },
         {
@@ -85,7 +95,7 @@ define([], () => {
         controller: 'CategoryController',
         controllerAs: 'vm',
         resolve: {
-          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['category'])],
+          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['category', 'articles-list'])],
           category: ['load', 'api', '$stateParams',
             (load, api, $stateParams) => api.getCategoryById($stateParams.id)],
           articles: ['load', 'api', '$stateParams',
@@ -98,7 +108,7 @@ define([], () => {
         controller: 'ArticleController',
         controllerAs: 'vm',
         resolve: {
-          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['article'])],
+          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['article', 'articles-list'])],
           article: ['load', 'api', '$stateParams', (load, api, $stateParams) => api.getArticleById($stateParams.id)],
           categories: ['load', 'api', (load, api) => api.getCategories()]
         }
