@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  angular.module('app.category')
+  angular.module('pages.category')
       .controller('CategoryController', CategoryController);
 
   CategoryController.$inject = ['$scope'];

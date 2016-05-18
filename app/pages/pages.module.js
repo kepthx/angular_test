@@ -1,3 +1,5 @@
 (() => {
-  angular.module("app.pages", []);
+  angular.module("app.pages", [
+   
+  ]);
 })();
