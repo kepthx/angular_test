@@ -14,6 +14,7 @@ define([], () => {
         },
         {
           name: 'api',
+          series: true,
           files: [
             '/app/services/services.module.js',
             '/app/services/api.service.js'
@@ -21,6 +22,7 @@ define([], () => {
         },
         {
           name: 'category',
+          series: true,
           files: [
             '/app/pages/category/category.module.js',
             '/app/pages/category/category.controller.js'
@@ -47,9 +49,14 @@ define([], () => {
     $stateProvider
       .state('app', {
         abstract: true,
-        resolve: {
-          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['pages'])]
-        }
+        template: '<div ui-view></div>',
+        // resolve: {
+        //   load: ["$ocLazyLoad", $ocLazyLoad => {
+        //     return $ocLazyLoad.load(['pages', 'api']).then((pages, api) => {
+        //       console.log(arguments);
+        //     });
+        //   }]
+        // }
       })
       .state('app.category', {
         url: '/category/:id',
@@ -57,8 +64,12 @@ define([], () => {
         controller: 'CategoryController',
         controllerAs: 'vm',
         resolve: {
-          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['category', 'api'])],
-          category: ['api', '$stateParams', (api, $stateParams) => api.getCategoryById($stateParams.id)]
+          load: ["$ocLazyLoad", $ocLazyLoad => {
+            return $ocLazyLoad.load(['pages', 'category', 'api']).then(() => {});
+          }],
+          // category: ['api', '$stateParams', (api, $stateParams) => {
+          //   return api.getCategoryById($stateParams.id);
+          // }]
         }
       })
       .state('app.article', {

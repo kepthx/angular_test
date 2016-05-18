@@ -17,11 +17,13 @@
         //////////////////
 
         function getCategories(){
-            return getData().categories;
+            return getData().then(data => data.categories);
         }
         function getCategoryById(id){
-            let categories = getData().categories;
-            return categories.filter((item)=>item.id === id);
+          return getCategories().then(data => {
+            let [category] = data.filter(item => item.id === id);
+            return category;
+          });
         }
         function getArticles(){
             let articles = getData().articles;
