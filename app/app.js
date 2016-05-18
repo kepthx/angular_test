@@ -15,9 +15,10 @@ define([], () => {
           ]
         },
         {
-          name: 'core',
+          name: 'header',
           files: [
-            '/app/pages/core/app.controller.js'
+            '/app/components/header/header.module.js',
+            '/app/components/header/header.controller.js'
           ]
         },
         {
@@ -59,14 +60,23 @@ define([], () => {
       .state('app', {
         abstract: true,
         views: {
-          header: {},
-          content: {}
-        },
-
-        resolve: {
-          load: ["$ocLazyLoad", $ocLazyLoad => {
-            return $ocLazyLoad.load(['pages', 'api', 'core']);
-          }]
+          header: {
+            templateUrl: "/app/components/header/header.tmpl.html",
+            controller: "HeaderController",
+            controllerAs: "vm",
+            resolve: {
+              load: ["$ocLazyLoad", ($ocLazyLoad) => {
+                return $ocLazyLoad.load(['pages', 'api', 'header']);
+              }],
+              categories: ['load', 'api',
+                (load, api) => {
+                  return api.getCategories();
+                }]
+            }
+          },
+          content: {
+            template: '<div id="content" ui-view></div>'
+          }
         }
       })
       .state('app.category', {

@@ -11,7 +11,7 @@
                     <h4 class="media-heading" ng-bind="item.title"></h4>
                     <p>
                         <time ng-bind="item.date_published | date: 'yyyy-MM-dd'"></time>
-                        <b ng-bind="vm.getCategory(item.category)"></b>
+                        <b ng-bind="vm.category.name"></b>
                     </p>
                     <p class="article_summary" ng-bind="item.body"></p>
                 </div>
