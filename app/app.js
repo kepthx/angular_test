@@ -5,6 +5,7 @@ define([], () => {
 
   function appConfig($urlRouterProvider, $stateProvider, $controllerProvider, $compileProvider, $filterProvider, $provide, $ocLazyLoadProvider){
     $ocLazyLoadProvider.config({
+      debug: true,
       loadedModules: ['app'],
       asyncLoader: require,
       modules: [
@@ -54,6 +55,15 @@ define([], () => {
             '/app/pages/article/article.module.js',
             '/app/pages/article/article.controller.js'
           ]
+        },
+        {
+          name: 'articles-group',
+          series: true,
+          files: [
+            '/app/components/articles-group/articles-group.module.js',
+            '/app/components/articles-group/articles-group.directive.js',
+            '/app/components/articles-group/articles-group.controller.js'
+          ]
         }
       ]
     });
@@ -95,7 +105,7 @@ define([], () => {
         controller: 'CategoryController',
         controllerAs: 'vm',
         resolve: {
-          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['category', 'articles-list'])],
+          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['category', 'articles-list', 'articles-group'])],
           category: ['load', 'api', '$stateParams',
             (load, api, $stateParams) => api.getCategoryById($stateParams.id)],
           articles: ['load', 'api', '$stateParams',
@@ -108,9 +118,11 @@ define([], () => {
         controller: 'ArticleController',
         controllerAs: 'vm',
         resolve: {
-          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['article', 'articles-list'])],
+          load: ["$ocLazyLoad", $ocLazyLoad => $ocLazyLoad.load(['article', 'articles-list', 'articles-group'])],
           article: ['load', 'api', '$stateParams', (load, api, $stateParams) => api.getArticleById($stateParams.id)],
-          categories: ['load', 'api', (load, api) => api.getCategories()]
+          category: ['api', 'article', (api, article) => {
+            return api.getCategoryById(article.category);
+          }]
         }
       })
 

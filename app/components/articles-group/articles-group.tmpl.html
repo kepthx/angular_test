@@ -1,0 +1,9 @@
+<div class="articles-list">
+    <div class="panel panel-default" ng-repeat="category in ::agc.categories track by category.id">
+        <div class="panel-heading" ng-bind="::category.name"></div>
+        <div class="list-group">
+            <a ng-repeat="article in ::category.articles track by article.id" ui-sref="app.article({id: category.id})"
+               ng-bind="::article.title" class="list-group-item"></a>
+        </div>
+    </div>
+</div>

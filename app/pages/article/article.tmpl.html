@@ -7,12 +7,13 @@
             </p>
             <p>
                 <time ng-bind="vm.article.date_published | date: 'yyyy-MM-dd'"></time>
-                <b ng-bind="vm.getCategory(vm.article.category)"></b>
+                <b ng-bind="::vm.category.name"></b>
             </p>
             <p class="text-justify" ng-bind="vm.article.body"></p>
         </div>
         <div class="col-md-4">
             <articles-list desc="true"></articles-list>
+            <articles-group category="vm.category"></articles-group>
         </div>
     </div>
 </div><!-- /.container -->

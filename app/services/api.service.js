@@ -10,7 +10,8 @@
             getCategoryById,
             getArticles,
             getArticleById,
-            getArticlesByCategory
+            getArticlesByCategory,
+            getCategoriesWithArticles
         };
         return service;
 
@@ -22,10 +23,7 @@
             });
         }
         function getCategoryById(id){
-          return getCategories().then(data => {
-            let [category] = data.filter(item => item.id == id);
-            return category;
-          });
+          return getCategories().then(data => data.find(item => item.id == id));
         }
         function getArticles(){
             return getData().then(data => {
@@ -36,14 +34,21 @@
             });
         }
         function getArticleById(id){
-            return getArticles().then(data => {
-              let [article] = data.filter(item => item.id == id);
-              return article;
-            });
+            return getArticles().then(data => data.find(item => item.id == id));
         }
 
         function getArticlesByCategory(categoryId){
             return getArticles().then(data => data.filter(item => item.category == categoryId));
+        }
+
+        function getCategoriesWithArticles(){
+            return getData().then(data => {
+              let categories = data.categories;
+              return categories.map(category => {
+                category.articles = data.articles.filter(article => article.category == category.id);
+                return category;
+              });
+            });
         }
 
         function getData(){
