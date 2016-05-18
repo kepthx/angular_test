@@ -1,7 +1,5 @@
-<div class="articles_all">
-    <div class="list-group">
-        <a ui-sref="app.article({id: item.id})" class="list-group-item" ng-repeat="item in alc.articles | orderBy: 'id': alc.reverce track by $index">
-            <p class="list-group-item-text" ng-bind="::item.title"></p>
-        </a>
-    </div>
+<div class="list-group articles-list">
+    <a ui-sref="app.article({id: item.id})" class="list-group-item" ng-repeat="item in alc.articles | orderBy: 'id': alc.reverce track by $index">
+        <p class="list-group-item-text" ng-bind="::item.title"></p>
+    </a>
 </div>

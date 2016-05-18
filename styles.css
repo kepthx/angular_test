@@ -4,3 +4,7 @@
 .article img {
     max-width: 100%;
 }
+.articles-list {
+    max-height: 40vh;
+    overflow-y: auto;
+}
