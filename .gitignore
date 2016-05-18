@@ -1,12 +1,4 @@
+node_modules/
+bower_components/
+.DS_Store
 .idea
-bower_components
-typings/**
-node_modules
-jspm_packages
-link-checker-results.txt
-**/*npm-debug.log.*
-_test-output
-_temp
-
-!systemjs.config.js
-!typings/typings.d.ts
