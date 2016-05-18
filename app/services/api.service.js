@@ -17,31 +17,39 @@
         //////////////////
 
         function getCategories(){
-            return getData().then(data => data.categories);
+            return getData().then(data => {
+              return data.categories;
+            });
         }
         function getCategoryById(id){
           return getCategories().then(data => {
-            let [category] = data.filter(item => item.id === id);
+            let [category] = data.filter(item => item.id == id);
             return category;
           });
         }
         function getArticles(){
-            let articles = getData().articles;
-            return articles.map((item)=> item.date_published = new Date(item.date_published));
+            return getData().then(data => {
+              return data.articles.map(item => {
+                item.date_published = new Date(item.date_published);
+                return item;
+              });
+            });
         }
         function getArticleById(id){
-            let articles = getData().articles;
-            return articles.find((item)=>item.id === id);
+            return getArticles().then(data => {
+              let [article] = data.filter(item => item.id == id);
+              return article;
+            });
         }
 
         function getArticlesByCategory(categoryId){
-            let articles = getData().articles;
-            articles = articles.filter((item)=>item.category === categoryId);
-            return articles.map((item)=> item.date_published = new Date(item.date_published));
+            return getArticles().then(data => data.filter(item => item.category == categoryId));
         }
 
         function getData(){
-            return $http.get('/response.json').then((data)=> JSON.parse(data.data).data);
+            return $http.get('/response.json').then(data => {
+              return data.data.data;
+            });
         }
     }
 })();
