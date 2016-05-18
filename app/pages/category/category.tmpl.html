@@ -3,12 +3,14 @@
         <div class="col-md-8">
             <div class="media" ng-repeat="item in vm.articles track by $index">
                 <div class="media-left">
-                    <a href="#">
+                    <a ui-sref="app.article({id: item.id})">
                         <img class="media-object" ng-src="{{item.image}}" alt="Article image" style="width: 128px; height: 128px;">
                     </a>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading" ng-bind="item.title"></h4>
+                    <h4 class="media-heading">
+                        <a ui-sref="app.article({id: item.id})" ng-bind="item.title"></a>
+                    </h4>
                     <p>
                         <time ng-bind="item.date_published | date: 'yyyy-MM-dd'"></time>
                         <b ng-bind="vm.category.name"></b>
@@ -18,13 +20,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="articles_all">
-                <div class="list-group">
-                    <a href="#" class="list-group-item" ng-repeat="item in vm.allArticles track by $index">
-                        <p class="list-group-item-text" ng-bind="::item.title"></p>
-                    </a>
-                </div>
-            </div>
+
             <div class="articles_grouped">
 
             </div>
