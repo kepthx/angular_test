@@ -5,21 +5,22 @@ define([], () => {
 
   function appConfig($urlRouterProvider, $stateProvider, $controllerProvider, $compileProvider, $filterProvider, $provide, $ocLazyLoadProvider){
     $ocLazyLoadProvider.config({
-      debug: true,
       loadedModules: ['app'],
       asyncLoader: require,
       modules: [
         {
-          name: 'pages',
+          name: "modules",
           files: [
-            '/app/pages/pages.module.js'
+            '/app/components/header/header.module.js',
+            '/app/components/articles-list/articles-list.module.js',
+            '/app/services/services.module.js',
+            '/app/pages/category/category.module.js'
           ]
         },
         {
           name: 'header',
           series: true,
           files: [
-            '/app/components/header/header.module.js',
             '/app/components/header/header.controller.js'
           ]
         },
@@ -27,7 +28,6 @@ define([], () => {
           name: 'articles-list',
           series: true,
           files: [
-            '/app/components/articles-list/articles-list.module.js',
             '/app/components/articles-list/articles-list.controller.js',
             '/app/components/articles-list/articles-list.directive.js'
           ]
@@ -36,7 +36,6 @@ define([], () => {
           name: 'api',
           series: true,
           files: [
-            '/app/services/services.module.js',
             '/app/services/api.service.js'
           ]
         },
@@ -44,7 +43,6 @@ define([], () => {
           name: 'category',
           series: true,
           files: [
-            '/app/pages/category/category.module.js',
             '/app/pages/category/category.controller.js'
           ]
         },
@@ -85,9 +83,8 @@ define([], () => {
             controller: "HeaderController",
             controllerAs: "vm",
             resolve: {
-              load: ["$ocLazyLoad", ($ocLazyLoad) => {
-                return $ocLazyLoad.load(['pages', 'api', 'header']);
-              }],
+              // modules: ["$ocLazyLoad", ($ocLazyLoad) => $ocLazyLoad.load('modules')],
+              load: ["$ocLazyLoad", ($ocLazyLoad) => $ocLazyLoad.load(['api', 'header'])],
               categories: ['load', 'api',
                 (load, api) => {
                   return api.getCategories();
@@ -95,7 +92,14 @@ define([], () => {
             }
           },
           content: {
-            template: '<div id="content" ui-view></div>'
+            template: '<div id="content" ui-view></div>',
+            // resolve: {
+            //   modules: ["$ocLazyLoad", ($ocLazyLoad) => {
+            //     return $ocLazyLoad.load('modules').then(() => {
+            //       console.log(arguments);
+            //     })
+            //   }]
+            // }
           }
         }
       })
@@ -129,6 +133,6 @@ define([], () => {
   }
 
   function appRun($ocLazyLoad){
-    $ocLazyLoad.load('app/pages/pages.module.js');
+    $ocLazyLoad.load('modules');
   }
 });
