@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container category">
     <div class="row">
         <div class="col-md-8">
             <div class="media" ng-repeat="item in vm.articles track by $index">
                 <div class="media-left">
                     <a ui-sref="app.article({id: item.id})">
-                        <img class="media-object" ng-src="{{item.image}}" alt="Article image" style="width: 128px; height: 128px;">
+                        <img class="media-object" ng-src="{{item.image}}" alt="Article image">
                     </a>
                 </div>
                 <div class="media-body">

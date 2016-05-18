@@ -11,7 +11,7 @@
     vm.checkActive = checkActive;
 
     function checkActive(id){
-      return $state.params.id == id;
+      return $state.params.id == id && /category/.test($state.current.name);
     }
   }
 })();

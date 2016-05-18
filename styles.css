@@ -8,3 +8,10 @@
     max-height: 40vh;
     overflow-y: auto;
 }
+.category .media-left a {
+    overflow: hidden;
+}
+.category .media-left img {
+    height: 128px;
+    background-position: center center;
+}
