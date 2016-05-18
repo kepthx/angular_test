@@ -1,5 +1,5 @@
-'use strict';
 (() => {
+    'use strict';
     angular.module('app.services')
         .factory('API', apiService);
     apiService.$inject = ['$http'];
@@ -34,12 +34,12 @@
 
         function getArticlesByCategory(categoryId){
             let articles = getData().articles;
-            articles = articles.filter((item)=>item.category === id);
+            articles = articles.filter((item)=>item.category === categoryId);
             return articles.map((item)=> item.date_published = new Date(item.date_published));
         }
 
         function getData(){
-            return $http.get('/response.json').then((data)=> JSON.parse(data.data));
+            return $http.get('/response.json').then((data)=> JSON.parse(data.data).data);
         }
     }
 })();

@@ -1,3 +1,4 @@
 (() => {
-  angular.module("")
+  'use strict';
+  angular.module('app.article', []);
 })();
