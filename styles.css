@@ -12,6 +12,7 @@
     overflow: hidden;
 }
 .category .media-left img {
-    height: 128px;
+    max-height: 128px;
+    max-width: 128px;
     background-position: center center;
 }
